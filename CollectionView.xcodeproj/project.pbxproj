@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8489C3262407A22B001A46C6 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489C3252407A22B001A46C6 /* DoorViewController.swift */; };
 		84D45971240654D500A87266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45970240654D500A87266 /* AppDelegate.swift */; };
 		84D45973240654D500A87266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45972240654D500A87266 /* SceneDelegate.swift */; };
 		84D45975240654D500A87266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45974240654D500A87266 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		84D45980240654DA00A87266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4597E240654DA00A87266 /* LaunchScreen.storyboard */; };
 		84D4598B240654DB00A87266 /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4598A240654DB00A87266 /* CollectionViewTests.swift */; };
 		84D45996240654DB00A87266 /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D45995240654DB00A87266 /* CollectionViewUITests.swift */; };
+		84D459A524065AD500A87266 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 84D459A424065AD500A87266 /* SwiftyJSON */; };
+		84D459A724065CDD00A87266 /* DoorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D459A624065CDD00A87266 /* DoorViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84583A4C24067CFE00CCDFFB /* Forum-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Forum-Regular.ttf"; path = "../../../../../Downloads/Forum/Forum-Regular.ttf"; sourceTree = "<group>"; };
+		8489C3252407A22B001A46C6 /* DoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		84D4596D240654D500A87266 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D45970240654D500A87266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D45972240654D500A87266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		84D45991240654DB00A87266 /* CollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D45995240654DB00A87266 /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
 		84D45997240654DB00A87266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D459A624065CDD00A87266 /* DoorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D459A524065AD500A87266 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84583A4B24067CF100CCDFFB /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				84583A4C24067CFE00CCDFFB /* Forum-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		84D45964240654D500A87266 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +116,17 @@
 		84D4596F240654D500A87266 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				84583A4B24067CF100CCDFFB /* Font */,
 				84D45970240654D500A87266 /* AppDelegate.swift */,
 				84D45972240654D500A87266 /* SceneDelegate.swift */,
 				84D45974240654D500A87266 /* ViewController.swift */,
+				8489C3252407A22B001A46C6 /* DoorViewController.swift */,
 				84D45976240654D500A87266 /* Main.storyboard */,
 				84D4597C240654DA00A87266 /* Assets.xcassets */,
 				84D4597E240654DA00A87266 /* LaunchScreen.storyboard */,
 				84D45981240654DA00A87266 /* Info.plist */,
 				84D45979240654D500A87266 /* CollectionView.xcdatamodeld */,
+				84D459A624065CDD00A87266 /* DoorViewCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -147,6 +165,9 @@
 			dependencies = (
 			);
 			name = CollectionView;
+			packageProductDependencies = (
+				84D459A424065AD500A87266 /* SwiftyJSON */,
+			);
 			productName = CollectionView;
 			productReference = 84D4596D240654D500A87266 /* CollectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 84D45964240654D500A87266;
+			packageReferences = (
+				84D459A324065AD500A87266 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 84D4596E240654D500A87266 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,7 +288,9 @@
 			files = (
 				84D45975240654D500A87266 /* ViewController.swift in Sources */,
 				84D45971240654D500A87266 /* AppDelegate.swift in Sources */,
+				8489C3262407A22B001A46C6 /* DoorViewController.swift in Sources */,
 				84D4597B240654D500A87266 /* CollectionView.xcdatamodeld in Sources */,
+				84D459A724065CDD00A87266 /* DoorViewCell.swift in Sources */,
 				84D45973240654D500A87266 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84D459A324065AD500A87266 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84D459A424065AD500A87266 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84D459A324065AD500A87266 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		84D45979240654D500A87266 /* CollectionView.xcdatamodeld */ = {
