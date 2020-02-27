@@ -137,7 +137,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Главная страница" id="psu-JM-zQF">
-                        <barButtonItem key="backBarButtonItem" title="Назад" id="0of-5n-uvn"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="836-Ea-FVp"/>
                     </navigationItem>
                     <connections>
                         <outlet property="doorCollection" destination="aqC-CK-bp0" id="JOp-JY-Adq"/>
